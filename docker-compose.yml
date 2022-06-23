@@ -35,6 +35,7 @@ services:
     build:
       context: ./gateway
     container_name: gateway-server
+    restart: always
     ports:
       - 8080:8080
     links:
